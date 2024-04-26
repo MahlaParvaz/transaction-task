@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تراکنش های مالی</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>لیست تراکنش ها</h2>
+        <div class="search">
+          <input
+            class="search__input"
+            type="text"
+            placeholder="جستجوی تراکنش ..."
+            name=""
+            id=""
+          />
+          <span class="search__icon ">
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="width: 40px; height: 40px"
+            ></i>
+          </span>
+        </div>
+      </div>
+      <div class="transaction-btn">
+        <button class="btn">بارگذاری تراکنش ها</button>
+      </div>
+      <div class="transaction-list">
+        <p class="list__title">لیست تراکنش های شما</p>
+        <div class="table__container">
+          <table>
+            <thead>
+              <tr>
+                <th>ردیف</th>
+                <th>نوع تراکنش</th>
+                <th class="table__price">
+                  <div class="table table__sort-price">
+                    مبلغ
+                    <i
+                      class="fa-solid fa-chevron-down chevron chevron_price rotate"
+                    ></i>
+                  </div>
+                </th>
+                <th>شماره پیگیری</th>
+                <th>
+                  <div class="table table__sort-date">
+                    تاریخ تراکنش
+
+                    <i
+                      class="fa-solid fa-chevron-down chevron chevron_date rotate"
+                    ></i>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="table__body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
